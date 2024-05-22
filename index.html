@@ -67,11 +67,7 @@
             </div>
             <div class="hero">
                 <div class="hero_content">
-                    <svg
-                        class="dot-pattern"
-                        fill="none"
-                        viewBox="0 0 404 384"
-                    >
+                    <svg class="dot-pattern" fill="none" viewBox="0 0 404 384">
                         <defs>
                             <pattern
                                 id="dot-pattern"
@@ -139,16 +135,57 @@
 
         <!-- About me -->
         <div class="about container">
+            <div class="about__quote">
+                <img class="quote__icon" src="./asset/img/quote.svg" />
+            </div>
+
+            <svg class="dot-pattern dot__pattern--small" fill="none" viewBox="0 0 404 384">
+                <defs>
+                    <pattern
+                        id="dot-pattern"
+                        x="0"
+                        y="0"
+                        width="10"
+                        height="10"
+                        patternUnits="userSpaceOnUse"
+                    >
+                        <rect
+                            x="0"
+                            y="0"
+                            width="8"
+                            height="8"
+                            class="text-primary"
+                            fill="currentColor"
+                        ></rect>
+                    </pattern>
+                </defs>
+                <rect width="204" height="484" fill="url(#dot-pattern)"></rect>
+            </svg>
             <h2 class="about__header">About Me</h2>
             <div class="about__content">
-                <p class="about__text">
-                    ""
-                </p>
-                <img class="about__media" />
-                <div class="about__link">
-                    <button class="git_link"></button>
-                    <button class="resume_link"></button>
+                <div class="about__text">
+                    <p class="about_desc">
+                        I'm an experienced front-end developer with a solid
+                        background in everything related to online-marketing on
+                        top. It is my passion to build slick & well optimized
+                        websites and web apps.
+                    </p>
+                    <p class="about_desc">
+                        I’m very much into gaming and learning to work with new
+                        technologies, always improving myself to stay on top of
+                        my field. Further, I like nature and enjoy doing some
+                        trekking from time to time. Finally, I'm a good person
+                        to have a beer with.
+                    </p>
                 </div>
+                <img
+                    class="about__media"
+                    src="./asset/img/Untitled design.png"
+                />
+            </div>
+            <div class="about__link">
+                <button class="git_link btn btn_portfolio transition-all">View My Work</button>
+                <button class="btn__resume btn btn_contact transition-all">View Resume</button>
             </div>
         </div>
 

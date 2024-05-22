@@ -3,7 +3,6 @@
     font-size: 62.5%;
 
     --main-color: #239a3b;
-    background-color: #111827;
     color: white;
     font-weight: 500;
 }
@@ -13,7 +12,14 @@ body {
         BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans,
         sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
         Noto Color Emoji;
+    background-color: #111827;
 }
+
+body ::selection{ 
+    color: white;
+    background-color: var(--main-color);
+}
+
 
 button {
     font-family: inherit;
@@ -217,13 +223,82 @@ header {
     scale: 1.06;
 }
 
+.about {
+    position: relative;
+}
+
 .about__header {
     color: rgb(35, 154, 59);
     font-weight: 700;
     font-size: 2.25rem;
     line-height: 2.5rem;
-    letter-spacing: -.025em;
+    letter-spacing: -0.025em;
     margin-bottom: 2rem;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 40px;
+}
+
+.about__quote {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transform: translateX(-20%) translateY(30%);
+}
+
+.quote__icon {
+    width: 130px;
+    height: 130px;
+    background: transparent;
+    filter: brightness(0) saturate(100%) invert(49%) sepia(15%) saturate(2274%)
+        hue-rotate(80deg) brightness(95%) contrast(87%);
+    opacity: 0.5;
+}
+
+.dot__pattern--small{ 
+    position: absolute;
+    top: 50%;
+    right: -12%;
+    transform: translateY(-50%) translateX(10%) scaleY(1.3) scaleX(2);
+}
+
+
+.about__content {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    grid-template-rows: 1;
+    position: relative;
+    margin-top: 80px;
+}
+
+.about__text {
+    margin: 0 auto;
+}
+
+.about__text p:nth-child(2) {
+    margin-top: 40px;
+}
+
+.about_desc {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    color: rgb(243, 244, 246);
+}
+
+.about__media {
+    margin-left: 40px;
+    width: 100%;
+    border-radius: 9999px;
+}
+
+.about__link{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about__link button{ 
+    padding: 0.8rem 1.5rem;
+}
+.btn__resume{
+    margin-left: 40px;
 }
