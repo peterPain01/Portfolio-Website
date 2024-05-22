@@ -59,12 +59,31 @@ a {
     cursor: pointer;
 }
 
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    transform: translateX(0%);
+    filter: blur(0);
+}
+
 @keyframes slideInFromLeft {
     0% {
         transform: translateX(-100%);
     }
     100% {
         transform: translateX(0);
+    }
+}
+
+@media (prefers-reduced-motion) {
+    .hidden {
+        transition: none;
     }
 }
 
@@ -422,7 +441,7 @@ header {
     cursor: pointer;
 }
 
-.project__img:hover{ 
+.project__img:hover {
     scale: 1.1;
 }
 
