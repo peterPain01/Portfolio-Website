@@ -23,6 +23,9 @@ const urls = [
     // "https://www.datocms-assets.com/60761/1642341262-unity.svg",
     "https://www.datocms-assets.com/60761/1642341256-jira.svg",
     // "https://www.datocms-assets.com/60761/1642341244-confluence.svg",
+    "./asset/img/logo-redis-svgrepo-com.svg",
+    "./asset/img/logo-mongo-svgrepo-com.svg",
+    "./asset/img/logo-android-svgrepo-com.svg",
 ];
 
 async function createToolsItem(tools_carousel) {
