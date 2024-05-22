@@ -13,13 +13,13 @@ body {
         sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
         Noto Color Emoji;
     background-color: #111827;
+    overflow-x: hidden;
 }
 
-body ::selection{ 
+body ::selection {
     color: white;
     background-color: var(--main-color);
 }
-
 
 button {
     font-family: inherit;
@@ -61,6 +61,15 @@ button {
     }
     100% {
         transform: translateX(0);
+    }
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
     }
 }
 
@@ -254,13 +263,12 @@ header {
     opacity: 0.5;
 }
 
-.dot__pattern--small{ 
+.dot__pattern--small {
     position: absolute;
     top: 50%;
     right: -12%;
     transform: translateY(-50%) translateX(10%) scaleY(1.3) scaleX(2);
 }
-
 
 .about__content {
     display: grid;
@@ -290,15 +298,74 @@ header {
     border-radius: 9999px;
 }
 
-.about__link{ 
+.about__link {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.about__link button{ 
+.about__link button {
     padding: 0.8rem 1.5rem;
 }
-.btn__resume{
+.btn__resume {
     margin-left: 40px;
+}
+
+/* Tools */
+
+.tools {
+    margin-top: 64px;
+    width: 100%;
+}
+
+.tools__header {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: var(--main-color);
+    letter-spacing: -0.025em;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.tools_carousel {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.tools__list {
+    display: inline-block;
+    animation: 30s slide infinite linear;
+}
+
+.tool_item {
+    display: inline-block;
+}
+
+.tool_item img {
+    width: 60px;
+    height: 60px;
+    margin: 0px 20px;
+    cursor: pointer;
+}
+
+.tools:hover .tools__list {
+    animation-play-state: paused;
+}
+
+.tool_item img:hover ~ h4 {
+    opacity: 1;
+    visibility: visible;
+}
+
+.tool_item h4 {
+    text-align: center;
+    color: var(--main-color);
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-top: 12px;
+    font-size: 1.2rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s;
 }
