@@ -24,6 +24,10 @@ body ::selection {
 button {
     font-family: inherit;
 }
+a {
+    color: black;
+    text-decoration: none;
+}
 /* Common CSS  */
 .transition-all {
     transition-property: all;
@@ -95,12 +99,21 @@ header {
 
 .navbar__social {
     display: flex;
-    gap: 12px;
+    gap: 16px;
     align-items: center;
 }
 
 .social__link img {
     width: 1.5rem;
+    background: transparent;
+    filter: brightness(0) saturate(100%) invert(43%) sepia(0%) saturate(2587%)
+        hue-rotate(336deg) brightness(96%) contrast(94%);
+    transition: filter 0.3s;
+}
+
+.social__link img:hover {
+    filter: brightness(0) saturate(100%) invert(42%) sepia(96%) saturate(394%)
+        hue-rotate(81deg) brightness(93%) contrast(89%);
 }
 
 .navbar__link {
@@ -405,6 +418,12 @@ header {
     width: 100%;
     border-radius: 20px;
     max-height: 300px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.project__img:hover{ 
+    scale: 1.1;
 }
 
 .project__content {
