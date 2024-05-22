@@ -340,6 +340,7 @@ header {
 
 .tool_item {
     display: inline-block;
+    padding: 10px 0px;
 }
 
 .tool_item img {
@@ -347,6 +348,7 @@ header {
     height: 60px;
     margin: 0px 20px;
     cursor: pointer;
+    transition: all 0.2s;
 }
 
 .tools:hover .tools__list {
@@ -358,6 +360,9 @@ header {
     visibility: visible;
 }
 
+.tool_item img:hover {
+    scale: 1.2;
+}
 .tool_item h4 {
     text-align: center;
     color: var(--main-color);
@@ -368,4 +373,94 @@ header {
     opacity: 0;
     visibility: hidden;
     transition: all 0.2s;
+}
+
+.projects {
+    margin-top: 80px;
+}
+.projects__header {
+    font-weight: 600;
+    color: var(--main-color);
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.projects__desc {
+    margin: 50px 0px;
+    color: rgb(209 213 219);
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    text-align: center;
+}
+
+.projects__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 60px;
+}
+
+.project__item {
+    border-radius: 20px;
+    overflow: hidden;
+}
+.project__item:hover {
+    scale: 1.05;
+}
+
+.project__img {
+    width: 100%;
+}
+
+.project__content {
+    background-color: rgb(55, 65, 81);
+    padding: 20px;
+    height: fit-content;
+    min-height: 200px;
+}
+
+.project__info {
+    text-align: center;
+}
+
+.project__details {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: rgb(229 231 235);
+    font-weight: 500;
+}
+
+.project__name {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    color: rgb(229 231 235);
+    font-weight: 600;
+    color: var(--main-color);
+    margin-top: 4px;
+}
+
+.project__desc {
+    text-align: center;
+    margin-top: 12px;
+    color: rgb(209 213 219);
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.project__tools {
+    text-align: center;
+}
+.project__tools h4 {
+    color: var(--main-color);
+    font-weight: 600;
+    margin: 16px 0px;
+}
+
+.project__links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.btn__link--demo {
+    margin-left: unset;
 }
