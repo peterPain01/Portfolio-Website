@@ -5,6 +5,7 @@
     --main-color: #239a3b;
     color: white;
     font-weight: 500;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -141,7 +142,8 @@ header {
     margin-left: 28px;
 }
 
-.navbar__link--link {
+.navbar__link--link,
+.navbar__link--link a {
     color: #9ca3af;
     font-weight: 600;
     font-size: 1rem;
@@ -149,7 +151,8 @@ header {
     cursor: pointer;
 }
 
-.navbar__link--link:hover {
+.navbar__link--link:hover,
+.navbar__link--link a:hover {
     color: var(--main-color);
 }
 
@@ -318,6 +321,10 @@ header {
     margin-top: 40px;
 }
 
+.about__text--highlight {
+    color: var(--main-color);
+    font-weight: 500;
+}
 .about_desc {
     font-size: 1.25rem;
     line-height: 1.75rem;

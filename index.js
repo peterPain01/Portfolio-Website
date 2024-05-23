@@ -9,7 +9,7 @@ const urls = [
     "https://www.datocms-assets.com/60761/1642341260-redux.svg",
     // "https://www.datocms-assets.com/60761/1643647501-graphql.svg",
     // "https://www.datocms-assets.com/60761/1642341257-next-dot-js.svg",
-    // "https://www.datocms-assets.com/60761/1642341241-bootstrap.svg",
+    "https://www.datocms-assets.com/60761/1642341241-bootstrap.svg",
     // "https://www.datocms-assets.com/60761/1642341243-bulma.svg",
     // "https://www.datocms-assets.com/60761/1642341263-webpack.svg",
     // "https://www.datocms-assets.com/60761/1642341253-gulp.svg",
