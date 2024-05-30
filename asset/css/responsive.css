@@ -47,6 +47,13 @@
         margin-top: 40px;
     }
 
+    .hero { 
+        display: block;
+        margin: unset;
+        margin: 0px 12px; 
+        width: fit-content;
+    }
+
     .hero__text {
         margin-top: 32px;
     }
