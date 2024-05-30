@@ -1,0 +1,84 @@
+@media screen and (min-width: 992px) {
+    .show-on-mobile {
+        display: none;
+    }
+
+    .show-on-pc {
+        display: unset;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .show-on-mobile {
+        display: block;
+    }
+    .show-on-pc {
+        display: none;
+    }
+
+    .navbar {
+        margin: 0px 12px;
+    }
+
+    .about__header {
+        text-align: center;
+    }
+
+    .container {
+        width: unset;
+        max-width: unset;
+        margin: unset;
+    }
+
+    .about__content {
+        display: block;
+        margin: 0px 20px;
+    }
+
+    .about_desc {
+        text-align: center;
+    }
+
+    .hero__heading {
+        font-size: 3rem;
+    }
+
+    .tools__header {
+        margin-top: 40px;
+    }
+
+    .hero__text {
+        margin-top: 32px;
+    }
+    
+    .hero__text .hero__heading,
+    .hero__text .hero__desc {
+        text-align: center;
+    }
+
+    .hero__button {
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+
+    .dot-pattern {
+        display: none;
+    }
+
+    .btn_work,
+    .btn_get-in-touch {
+        padding: 12px 16px;
+        font-size: 0.9rem + 1vw;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .show-on-pc-tablet {
+        display: none;
+    }
+
+    .project__item {
+        padding: 0px 22px;
+        display: block;
+    }
+}
