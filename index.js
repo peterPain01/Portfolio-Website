@@ -8,7 +8,7 @@ const urls = [
     "https://www.datocms-assets.com/60761/1642341260-react.svg",
     "https://www.datocms-assets.com/60761/1642341260-redux.svg",
     // "https://www.datocms-assets.com/60761/1643647501-graphql.svg",
-    // "https://www.datocms-assets.com/60761/1642341257-next-dot-js.svg",
+    "https://www.datocms-assets.com/60761/1642341257-next-dot-js.svg",
     "https://www.datocms-assets.com/60761/1642341241-bootstrap.svg",
     // "https://www.datocms-assets.com/60761/1642341243-bulma.svg",
     // "https://www.datocms-assets.com/60761/1642341263-webpack.svg",
@@ -62,8 +62,10 @@ document.addEventListener("DOMContentLoaded", async (event) => {
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        if (entry.isIntersecting) entry.target.classList.add("show");
-        else entry.target.classList.remove("show");
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+            observer.unobserve(entry.target);
+        } else entry.target.classList.remove("show");
     });
 });
 
