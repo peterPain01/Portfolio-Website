@@ -37,6 +37,7 @@ a {
 }
 
 .btn {
+    display: inline-block;
     font-weight: 500;
     font-size: 1rem;
     border: transparent;
@@ -251,6 +252,7 @@ header {
 .hero__img {
     border-radius: 999em 40px 40px 999em;
     width: 200%;
+    max-height: 100%;
 }
 
 .btn_work {
@@ -269,6 +271,8 @@ header {
 
 .about {
     position: relative;
+    display: block;
+    margin-top: calc(40px + 2.2vh);
 }
 
 .about__header {
@@ -279,7 +283,6 @@ header {
     letter-spacing: -0.025em;
     margin-bottom: 2rem;
     text-align: center;
-    margin-top: 40px;
 }
 
 .about__quote {
@@ -341,13 +344,21 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 22px;
 }
 
 .about__link button {
     padding: 0.8rem 1.5rem;
 }
+
+.git_link {
+    margin-left: unset;
+    padding: 16px 26px;
+}
+
 .btn__resume {
     margin-left: 40px;
+    padding: 16px 26px;
 }
 
 /* Tools */
@@ -444,7 +455,7 @@ header {
     width: 100%;
     border-radius: 20px;
     max-height: 300px;
-    transition: all 0.5s;
+    transition: scale 0.5s;
     cursor: pointer;
 }
 
@@ -505,4 +516,6 @@ header {
 }
 .btn__link--demo {
     margin-left: unset;
+    color: black;
+    padding: 8px 12px;
 }
